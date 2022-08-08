@@ -253,8 +253,8 @@ case 'menu': case 'help': case '?': {
 ╚════════
   `
   let but = [
-  {urlButton: {displayText: 'Source Code ♨️',url: 'https://github.com/NzrlAfndi/Ichigo-Kurosaki'}}, 
-  {urlButton: {displayText: 'Website 🔗',url: 'https://linktr.ee/nzrlafndi'}}, 
+  {urlButton: {displayText: 'Source Code ♨️',url: 'https://github.com/NzrlAfndi'}}, 
+  {urlButton: {displayText: 'Website 🔗',url: 'https://wa.me/6283183321692'}}, 
   {"quickReplyButton": {"displayText": "Donasi 🗂️","id": `donasi`},},
   {"quickReplyButton": {"displayText": "Owner 👦","id": "owner"},},
   {"quickReplyButton": {"displayText": "Status Bot ⌚","id": `ping`}}
@@ -263,12 +263,13 @@ case 'menu': case 'help': case '?': {
   }
   break
 case 'donasi': case 'sewa': case 'sewabot': {
-  let donasi = `Scan QR Above To Donate
+  let donasi = `Hubungin Owner Untuk Donasi
 
 Rental Bot Prices :
-💰 10k/week
-💰 25k/month
-💰 100k/year`
+💰 10k/10hari
+💰 25k/1bulan
+💰 100k/1tahun
+🗿 permanen buat sendiri`
   let but = [{"quickReplyButton": {"displayText": "Owner 👦","id": "owner"}}]
   ichi.sendButtonImg(m.chat, donasi, global.ownerName, global.donasi, but)
   }
